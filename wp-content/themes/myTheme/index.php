@@ -8,6 +8,7 @@
 </head>
 <body <?php body_class(); ?>>
 	<h1><a href="<?php echo home_url(); ?>">Welcome to WEB GURU!</a></h1>
-	
+	<h2><?php bloginfo('name'); ?></h2>
+	<h2><?php bloginfo('description'); ?></h2>
 </body>
 </html>
