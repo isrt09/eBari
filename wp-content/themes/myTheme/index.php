@@ -1,27 +1,18 @@
-<!DOCTYPE html>
-<html <?php language_attributes(); ?>>
-<head>
-	<meta charset="<?php bloginfo('charset') ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title><?php bloginfo('title'); ?></title>
-	<link rel="stylesheet" href="style.css">
-</head>
-<body <?php body_class(); ?>>
-	<h1><a href="<?php echo home_url(); ?>">Welcome to WEB GURU!</a></h1>
-	<h2><?php bloginfo('name'); ?></h2>
-	<h2><?php bloginfo('description'); ?></h2>
-	<hr>
-	<!-- Post Section -->
-	<?php 
-		if(have_posts()) :
-			while(have_posts()):the_post(); ?>
-			<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-			<p><?php the_content(); ?></p>
-	  <?php endwhile;
-		else :
-			echo "No";
-		endif;
-		
-	 ?>
-</body>
-</html>
+<?php get_header(); ?>
+	<div class="content_wrapper">
+		<div class="left_content">
+			<?php 
+				if(have_posts()) :
+					while(have_posts()):the_post();?>
+					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+					<p><?php the_content(); ?></p>	
+			<?php   endwhile;
+				else:
+					echo "Not Found";
+				endif;					
+			 ?>				
+		</div>
+		<?php get_sidebar(); ?>	
+		<br class="clear" />
+	</div>
+<?php get_footer(); ?>	
