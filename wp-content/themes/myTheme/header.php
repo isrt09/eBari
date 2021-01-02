@@ -15,10 +15,9 @@
 			<nav class="main-menu">
 				<div class="menu">
 					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Disclaimer</a></li>
-						<li><a href="#">About Us</a></li>
-						<li><a href="#">Contact Us</a></li>
+						<?php wp_nav_menu([
+							'theme_location' => 'first_menu'
+						]); ?>
 					</ul>
 				</div>
 			</nav>			
