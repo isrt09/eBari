@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 <head>
-	<meta charset="UTF-8">
+	<meta charset="<?php bloginfo('charset') ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>IT Bari || WordPres Theme Development (WEB GURU)</title>
+	<title><?php bloginfo('title'); ?></title>
 	<link rel="stylesheet" href="style.css">
 </head>
-<body>
-	<h1>Welcome to WEB GURU!</h1>
+<body <?php body_class(); ?>>
+	<h1><a href="<?php echo home_url(); ?>">Welcome to WEB GURU!</a></h1>
+	
 </body>
 </html>
