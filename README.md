@@ -1,1 +1,1 @@
-#IT Bari - WordPress Theme Development
+# IT Bari - WordPress Theme Development
