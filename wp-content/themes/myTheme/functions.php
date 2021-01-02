@@ -5,6 +5,34 @@
 	}
 	add_action('wp_enqueue_scripts','calling_resources');
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Hide all WordPress Update Notifications in Dashboard
 add_action('after_setup_theme', 'remove_core_updates'); 
 function remove_core_updates() { 

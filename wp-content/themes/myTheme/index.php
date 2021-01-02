@@ -1,6 +1,7 @@
-<?php get_header(); ?>
+<?php get_header(); ?>   
 	<div class="content_wrapper">
 		<div class="left_content">
+			<h2><?php echo get_template_part('myText'); ?></h2>
 			<?php 
 				if(have_posts()) :
 					while(have_posts()):the_post();?>
