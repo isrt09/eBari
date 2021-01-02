@@ -3,7 +3,7 @@
 <head>
 	<meta charset="<?php bloginfo('charset') ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title><?php bloginfo('title') ?></title>
+	<title><?php if(is_single() OR is_page()){wp_title('',true);} elseif(is_front_page()){ bloginfo('description');}else{bloginfo('description');} ?> | <?php bloginfo('name') ?></title>
 	<!-- <link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>" /> -->
 	<?php wp_head(); ?>
 </head>
