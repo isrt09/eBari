@@ -2,9 +2,11 @@
 		<p>All Rights Reserved, <a href="http://itbari.com">IT-Bari Tutorials</a> &copy; 2016</p>
 		<nav id="footer_nav">
 			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
+				<?php 
+					wp_nav_menu([
+						'theme_location'=>'footer_menu'
+					]);
+				 ?>
 			</ul>
 		</nav>
 	</footer>

@@ -5,7 +5,8 @@
 	}
 	add_action('wp_enqueue_scripts','calling_resources');
 	register_nav_menus([
-		'first_menu' => 'Main Menu',		
+		'first_menu' => 'Main Menu',
+		'footer_menu'=> 'Footer Menu'		
 	]);
 
 
