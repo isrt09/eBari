@@ -133,6 +133,16 @@ header.main-header h3{
 	color:#2c7092;
 	text-decoration:none;
 }
-/*
-	Tutorial By- http://ITBari.com, All Rights Reserved
-*/
+
+.post_meta{
+	border:1px solid #ddd;
+	padding: 10px;	
+}
+
+.left_content p {
+	text-align: justify;
+}
+.post_meta a {
+	text-decoration: none;
+	padding: 2px;
+}
