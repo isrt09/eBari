@@ -8,7 +8,7 @@
 		'first_menu' => 'Main Menu',
 		'footer_menu'=> 'Footer Menu'		
 	]);
-
+	add_theme_support('post-thumbnails');
 
 
 

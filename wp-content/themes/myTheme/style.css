@@ -146,3 +146,9 @@ header.main-header h3{
 	text-decoration: none;
 	padding: 2px;
 }
+
+div.featured_image img.wp-post-image{
+	width:100%;
+	height:auto;
+	margin-bottom: 10px;
+}

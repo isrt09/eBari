@@ -6,6 +6,9 @@
 				if(have_posts()) :
 					while(have_posts()):the_post();?>
 					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+					<div class="featured_image">
+						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+					</div>
 					<div class="post_meta">
 						Posted by : <span><?php the_author_posts_link(); ?></span> ,
 						Posted on : <span><?php the_time('d M, Y'); ?></span> ,
