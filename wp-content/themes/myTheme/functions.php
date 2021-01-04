@@ -1,14 +1,21 @@
 <?php 
 	
+
 	function calling_resources(){
 		wp_enqueue_style('style',get_stylesheet_uri(),'','1.0.0');
 	}
 	add_action('wp_enqueue_scripts','calling_resources');
-	register_nav_menus([
-		'first_menu' => 'Main Menu',
-		'footer_menu'=> 'Footer Menu'		
-	]);
-	add_theme_support('post-thumbnails');
+	
+	function theme_setup(){
+		register_nav_menus([
+			'first_menu' => 'Main Menu',
+			'footer_menu'=> 'Footer Menu'		
+		]);
+		add_theme_support('post-thumbnails');
+	}
+	add_action('after_theme_setup','theme_setup');
+
+	
 
 
 
