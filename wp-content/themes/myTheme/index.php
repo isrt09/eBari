@@ -13,7 +13,7 @@
 						Posted by : <span><?php the_author_posts_link(); ?></span> ,
 						Posted on : <span><?php the_time('d M, Y'); ?></span> ,
 						Posted In : <span><?php the_category(','); ?></span> ,
-						<?php comments_popup_link('No Comments', '1 Comment', '%Comments', 'myComment', 'Comments Off'); ?>
+						<?php comments_popup_link('No Comments', '1 Comment', '%Comments', 'myComment', 'Comments Off'); ?>						
 					</div>
 					<p><?php echo excerpt('30'); ?></p>
 			<?php   endwhile;
