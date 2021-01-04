@@ -96,8 +96,9 @@ header.main-header h3{
 
 .sidebar{
 	float:left;
-	width:34%;
+	width:34%;	
 }
+
 /* Site Footer */
 .site-footer{
 	margin:10px 0;

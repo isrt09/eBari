@@ -15,6 +15,20 @@
 	}
 	add_action('after_theme_setup','theme_setup');
 
+	// Our Widgets
+	function ourWidgets(){
+		register_sidebar([
+			'name' 			=> 'Left Sidebar',
+			'description'   => 'This is for Sidebar Registration in LeftSide',
+			'id'			=> 'ls',
+			'before_widget' => '<div class="sidebar">',
+			'after_widget'  => '</di>',
+			'before_title'  => '<h2>Sidebar Heading</h2>',
+			'after_title'   => '/<h2>'
+		]);
+	}
+	add_action('widgets_init','ourWidgets');
+
 	
 
 
