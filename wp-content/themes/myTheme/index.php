@@ -19,8 +19,9 @@
 			<?php   endwhile;
 				else:
 					echo "Not Found";
-				endif;					
-			 ?>				
+				endif;								
+			 ?>
+			 <?php if (function_exists("pagination")) { pagination($additional_loop->max_num_pages);} ?>				
 		</div>
 		<?php get_sidebar(); ?>	
 		<br class="clear" />

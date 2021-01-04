@@ -191,3 +191,37 @@ div.b_f_area div.b_f_s_wrap h2.green{
 }div.b_f_area div.b_f_s_wrap h2.orange{
 	color:orange;
 }
+
+/* Pagination */
+
+.pagination {
+	clear: both;
+    padding: 5px 0;
+    position: relative;
+    font-size: 96%;
+    line-height: 13px;
+    margin: 0.5em 0;
+    overflow: hidden;
+}
+.pagination span{padding:0 13px;}
+.pagination span, .pagination a {
+	display:block;
+	float:left;
+	margin: 2px 2px 2px 0;
+	padding:11px;
+	text-decoration:none;
+	width:auto;
+	color:#fff;
+	background: #555;
+}
+ 
+.pagination a:hover{
+	color:#fff;
+	background: #067092;
+}
+ 
+.pagination .current{
+	padding:11px;
+	background: #3279BB;
+	color:#fff;
+}
