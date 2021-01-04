@@ -14,7 +14,7 @@
 						Posted on : <span><?php the_time('d M, Y'); ?></span> ,
 						Posted In : <span><?php the_category(','); ?></span>
 					</div>
-					<p><?php the_content(); ?></p>	
+					<p><?php echo excerpt('30'); ?></p>
 			<?php   endwhile;
 				else:
 					echo "Not Found";
