@@ -13,7 +13,7 @@
 		]);
 		add_theme_support('post-thumbnails');
 	}
-	add_action('after_theme_setup','theme_setup');
+	add_action('after_setup_theme','theme_setup');
 
 	// Our Widgets
 	function ourWidgets(){
@@ -64,6 +64,7 @@
 		$excerpt = implode(" ",$excerpt)." <a href='" .get_permalink($post->ID) ." ' class='readmore'>Continue Reading &raquo;</a>";
 		echo $excerpt;
 	}
+
 
 
 	
