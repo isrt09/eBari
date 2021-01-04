@@ -1,3 +1,4 @@
-<ul>
-	<?php dynamic_sidebar('ls'); ?>
-</ul>
+<?php dynamic_sidebar('ls'); ?>
+
+
+

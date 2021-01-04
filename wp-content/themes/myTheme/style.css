@@ -96,7 +96,30 @@ header.main-header h3{
 
 .sidebar{
 	float:left;
-	width:34%;	
+	width:34%;
+}
+.sidebar .sidebar_single_area{
+	padding-bottom: 5px;
+	margin-bottom: 25px;
+	border-bottom: 1px dotted red;
+	margin-left: 10px;
+}
+.sidebar .sidebar_single_area:last-of-type{
+	border-bottom: none
+}
+.sidebar .sidebar_single_area h2.wid_heading{
+	color:red;
+}
+.sidebar .sidebar_single_area ul li a{
+	text-decoration: none; 
+	display:block;
+	padding: 2px 0;
+	-webkit-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+.sidebar .sidebar_single_area ul li a:hover{
+	color: red;
 }
 
 /* Site Footer */
@@ -152,4 +175,19 @@ div.featured_image img.wp-post-image{
 	width:100%;
 	height:auto;
 	margin-bottom: 10px;
+}
+
+div.b_f_area div.b_f_s_wrap ul li{
+	float:none;
+}
+div.b_f_area div.b_f_s_wrap ul li a{
+	text-decoration: none;
+}
+div.b_f_area div.b_f_s_wrap h2.red{
+	color:red;
+}
+div.b_f_area div.b_f_s_wrap h2.green{
+	color:green;
+}div.b_f_area div.b_f_s_wrap h2.orange{
+	color:orange;
 }

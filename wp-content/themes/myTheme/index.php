@@ -24,4 +24,5 @@
 		<?php get_sidebar(); ?>	
 		<br class="clear" />
 	</div>
+	<?php get_template_part('before_widget_sidebar'); ?>		
 <?php get_footer(); ?>	

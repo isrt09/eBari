@@ -22,8 +22,35 @@
 			'description'   => 'This is for Sidebar Registration in LeftSide',
 			'id'			=> 'ls',
 			'before_widget' => '<div class="sidebar">',
-			'after_widget'  => '</di>',
+			'after_widget'  => '</div>',
 			'before_title'  => '<h2>Sidebar Heading</h2>',
+			'after_title'   => '/<h2>'
+		]);
+		register_sidebar([
+			'name' 			=> 'Red Sidebar',
+			'description'   => 'This is for Sidebar Registration in Red Zone',
+			'id'			=> 'red',
+			'before_widget' => '<div class="b_f_s_wrap">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h2 class="red">Our Dynamic Heading 1</h2>',
+			'after_title'   => '/<h2>'
+		]);
+		register_sidebar([
+			'name' 			=> 'Orange Sidebar',
+			'description'   => 'This is for Sidebar Registration in Orange Zone',
+			'id'			=> 'orange',
+			'before_widget' => '<div class="b_f_s_wrap">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h2 class="orange">Our Dynamic Heading 2</h2>',
+			'after_title'   => '/<h2>'
+		]);
+		register_sidebar([
+			'name' 			=> 'Green Sidebar',
+			'description'   => 'This is for Sidebar Registration in Green Zone',
+			'id'			=> 'green',
+			'before_widget' => '<div class="b_f_s_wrap">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h2 class="green">Our Dynamic Heading 3</h2>',
 			'after_title'   => '/<h2>'
 		]);
 	}
