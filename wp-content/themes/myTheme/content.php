@@ -1,5 +1,4 @@
-<article>
-	<h2><?php echo get_template_part('myText'); ?></h2>
+<h2><?php echo get_template_part('myText'); ?></h2>
 	<?php 
 		if(have_posts()) :
 			while(have_posts()):the_post();?>
@@ -19,4 +18,3 @@
 			echo "Not Found";
 		endif;								
 	 ?>	 
-</article>
