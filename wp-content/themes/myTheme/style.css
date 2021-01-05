@@ -1,11 +1,13 @@
 /*
-Theme Name : Twenty Fifteen
+Theme Name : myTheme
 Theme URI  : https://wordpress.org/themes/myTheme/
 Author     : IT Bari
 Author URI : https://irbari.com/
 Description: This is demo test for building Theme Creation
 Version    : 1.0
 */
+
+
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 html, body{
 	margin:0;
@@ -224,4 +226,14 @@ div.b_f_area div.b_f_s_wrap h2.green{
 	padding:11px;
 	background: #3279BB;
 	color:#fff;
+}
+
+/* Search Box */
+div.cust_search{
+	float: right;
+}
+
+#searchform  label.screen-reader-text{
+	position: absolute;
+	left: -9999px;
 }

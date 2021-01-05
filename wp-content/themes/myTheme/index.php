@@ -1,5 +1,5 @@
 <?php get_header(); ?>   
-	<div class="content_wrapper">
+	<div class="content_wrapper">	
 		<div class="left_content">
 			<h2><?php echo get_template_part('myText'); ?></h2>
 			<?php 
