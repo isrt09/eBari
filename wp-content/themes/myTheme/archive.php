@@ -1,7 +1,7 @@
 <?php get_header(); ?>   
 	<div class="content_wrapper">
 		<div class="left_content">
-			
+
 			<?php if(have_posts()) :?>
 			<h2 class="archive_heding">
 			<?php $post = $posts[0]; ?>
@@ -22,7 +22,7 @@
 			<?php } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
 				<?php _e('Blog Archives'); ?>                                        
 			<?php } ?></h2>	
-					
+
 				<?php	while(have_posts()):the_post();?>
 					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 					<div class="featured_image">
@@ -34,14 +34,15 @@
 						Posted In : <span><?php the_category(','); ?></span>
 					</div>
 					<p><?php echo excerpt('30'); ?></p>
-			<?php   endwhile;
-				else:
-					echo "Not Found";
-				endif;					
-			 ?>				
+				<?php   endwhile;
+					else:
+						echo "Not Found";
+					endif;					
+				 ?>
+				 <?php if (function_exists("pagination")) { pagination($additional_loop->max_num_pages);}?>				
 		</div>
 		<?php get_sidebar(); ?>	
 		<br class="clear" />
 	</div>
 	<?php get_template_part('before_widget_sidebar'); ?>		
-<?php get_footer(); ?>	
+<?php get_footer(); ?>	 
